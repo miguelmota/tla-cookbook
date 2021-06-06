@@ -8,7 +8,7 @@ Maximum(S) == IF S = {} THEN -1 ELSE CHOOSE x \in S: \A y \in S: y <= x
 
 Init == TRUE
 Next ==
-  /\ Print(<<Maximum({4,7,5})>>, TRUE)
+  /\ Print(<<Maximum({4, 7, 5})>>, TRUE)
 
 Spec == Init /\ [][Next]_<<>>
 ====

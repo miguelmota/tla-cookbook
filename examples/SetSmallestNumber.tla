@@ -8,7 +8,7 @@ Minimum(S) == IF S = {} THEN -1 ELSE CHOOSE x \in S: \A y \in S \ {x}: y > x
 
 Init == TRUE
 Next ==
-  /\ Print(<<Minimum({4,7,5})>>, TRUE)
+  /\ Print(<<Minimum({4, 7, 5})>>, TRUE)
 
 Spec == Init /\ [][Next]_<<>>
 ====
